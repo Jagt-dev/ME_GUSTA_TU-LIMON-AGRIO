@@ -8,14 +8,14 @@ function Tabla_de_Citas({ citas }) {
                     <tr>
                         <th>Asunto</th>
                         <th>Descripción</th>
-                        {/* 1. Agregamos el encabezado de la columna */}
+                        
                         <th>Fecha y Hora</th> 
                     </tr>
                 </thead>
                 <tbody>
                     {citas.length === 0 ? (
                         <tr>
-                            {/* 2. Cambiamos colSpan a 3 porque ahora hay tres columnas */}
+                            
                             <td colSpan="3" style={{ textAlign: 'center', padding: '10px' }}>
                                 No hay citas programadas
                             </td>
@@ -25,7 +25,7 @@ function Tabla_de_Citas({ citas }) {
                             <tr key={cita.id}>
                                 <td>{cita.asunto}</td>
                                 <td>{cita.descripcion}</td>
-                                {/* 3. Mostramos la fecha formateada en la celda */}
+                                
                                 <td>{cita.fecha}</td> 
                             </tr>
                         ))

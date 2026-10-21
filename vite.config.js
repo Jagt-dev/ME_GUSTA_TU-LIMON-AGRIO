@@ -4,5 +4,5 @@ import { defineConfig } from 'vite'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/CITAS_TI_PARA_TI',
+  base: '/CITAS_TI_PARA_TI/',
 })

@@ -5,14 +5,13 @@ const asuntos = ["Reballing", "Armado de PC", "Asesorias", "Diagnosticos"];
 function Formulario_de_Cita({ onAgregarCita }) {
     const [asunto, setAsunto] = useState(asuntos[0]);
     const [descripcion, setDescripcion] = useState('');
-    // 1. Creamos el estado para la fecha y hora
+    
     const [fechaHora, setFechaHora] = useState('');
 
     const manejarEnvio = (e) => {
         e.preventDefault();
 
-        // 2. Reemplazamos la 'T' del input por un espacio y agregamos ':00' para los segundos
-        // Ejemplo de entrada: "2026-10-21T17:30" -> Resultado: "2026-10-21 17:30:00"
+     
         const fechaFormateada = fechaHora.replace('T', ' ') + ':00';
 
         const nuevaCita = {
@@ -26,7 +25,7 @@ function Formulario_de_Cita({ onAgregarCita }) {
             onAgregarCita(nuevaCita);
         }
 
-        // 4. Limpiamos los campos
+        
         setDescripcion('');
         setFechaHora('');
     };
@@ -55,7 +54,7 @@ function Formulario_de_Cita({ onAgregarCita }) {
                 onChange={(e) => setDescripcion(e.target.value)}
             />
 
-            {/* para fecha y hora */}
+            
             <input 
                 type="datetime-local" 
                 required
