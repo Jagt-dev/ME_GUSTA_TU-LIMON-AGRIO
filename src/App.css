@@ -1,0 +1,14 @@
+*{
+    color: black;
+    box-sizing: border-box;
+    margin: 0;
+    
+
+}
+.form-group{
+    padding: 10px;
+    display:flex;
+    align-items: center;
+    gap: 1%;
+    border: 1px solid black;
+}
