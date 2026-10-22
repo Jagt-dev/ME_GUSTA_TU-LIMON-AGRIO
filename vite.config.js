@@ -1,8 +1,8 @@
 import react from '@vitejs/plugin-react'
 import { defineConfig } from 'vite'
 
-// https://vite.dev/config/
+// https://vite.dev
 export default defineConfig({
   plugins: [react()],
-  base: '/CITAS_TI_PARA_TI/',
+  base: '/SISTEMA_CITAS_DE_TI_PARA_TI/', 
 })
