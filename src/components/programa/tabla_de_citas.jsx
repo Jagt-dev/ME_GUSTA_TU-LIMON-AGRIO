@@ -7,8 +7,7 @@ function Tabla_de_Citas({ citas }) {
                 <thead>
                     <tr>
                         <th style={{ padding: '14px 16px', backgroundColor: '#f1f5f9', color: '#1e293b', fontSize: '0.9rem', fontWeight: 600 }}>Asunto</th>
-                        <th style={{ padding: '14px 16px', backgroundColor: '#f1f5f9', color: '#1e293b', fontSize: '0.9rem', fontWeight: 600 }}>Descripción</th>
-                        
+                        <th style={{ padding: '14px 16px', backgroundColor: '#f1f5f9', color: '#1e293b', fontSize: '0.9rem', fontWeight: 600 }}>Descripción</th>     
                         <th style={{ padding: '14px 16px', backgroundColor: '#f1f5f9', color: '#1e293b', fontSize: '0.9rem', fontWeight: 600 }}>Fecha y Hora</th> 
                     </tr>
                 </thead>
@@ -25,7 +24,6 @@ function Tabla_de_Citas({ citas }) {
                             <tr key={cita.id}>
                                 <td style={{ padding: '14px 16px', borderTop: '1px solid #e2e8f0' }}>{cita.asunto}</td>
                                 <td style={{ padding: '14px 16px', borderTop: '1px solid #e2e8f0' }}>{cita.descripcion}</td>
-                                
                                 <td style={{ padding: '14px 16px', borderTop: '1px solid #e2e8f0' }}>{cita.fecha}</td> 
                             </tr>
                         ))
