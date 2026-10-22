@@ -4,8 +4,20 @@ import Nav from './Nav';
 function Header() {
     return (
         <header className="header">
-            <h1>Citas TI para TI</h1>
-            <Nav/>
+            <h1
+                style={{
+                    color: '#1e3a5f',
+                    fontSize: 'clamp(2rem, 5vw, 3rem)',
+                    fontFamily: 'sans-serif, sans-serif',
+                    fontWeight: 700,
+                    letterSpacing: '0.04em',
+                    margin: '2rem 0 0 0',
+                    textShadow: '0 2px 4px rgba(30, 58, 95, 0.2)',
+                    textAlign: 'center',
+                }}
+            >
+                Citas TI para TI
+            </h1>
         </header>
     );
 }

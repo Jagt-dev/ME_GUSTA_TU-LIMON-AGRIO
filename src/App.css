@@ -2,9 +2,10 @@
     color: black;
     box-sizing: border-box;
     margin: 0;
-    
-
+    font-family: courier, sans-serif;
 }
+
+
 .form-group{
     padding: 10px;
     display:flex;
