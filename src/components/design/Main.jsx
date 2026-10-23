@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import Formulario_de_Cita from './programa/formulario_de_citas';
-import Tabla_de_Citas from './programa/tabla_de_citas';
+import Formulario_de_Cita from '../views/formulario_de_citas';
+import Tabla_de_Citas from '../views/tabla_de_citas';
+
 
 function Main() {
     
@@ -13,10 +14,7 @@ function Main() {
 
     return (
         <main className="main-content">
-            
-            <Formulario_de_Cita onAgregarCita={agregarNuevaCita} />
-            
-            
+            <Formulario_de_Cita onAgregarCita={agregarNuevaCita} /> 
             <Tabla_de_Citas citas={citas} />
         </main>
     );

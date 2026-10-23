@@ -1,9 +1,8 @@
 import React from 'react';
-import Header from './components/Header';
-import Main from './components/Main';
-import Footer from './components/footer';
-import Form_Citas from './components/programa/formulario_de_citas'
-import './App.css'; 
+import Header from './components/design/Header';
+import Main from './components/design/Main';
+import Footer from './components/design/footer';
+import './styles/styles.css';
 
 function App() {
   return (
@@ -14,5 +13,4 @@ function App() {
     </div>
   );
 }
-
 export default App;
