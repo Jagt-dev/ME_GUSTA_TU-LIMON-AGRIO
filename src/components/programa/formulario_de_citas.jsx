@@ -28,7 +28,7 @@ const estiloFormulario = {
   maxWidth: "440px",
   margin: "4rem auto",
   padding: "28px 24px",
-  background: "linear-gradient(180deg, #ffffff 0%, #f8fafc 100%)",
+  background: "#0d1521",
   border: "1px solid #e2e8f0",
   borderRadius: "16px",
   boxShadow: "0 12px 32px rgba(15, 23, 42, 0.1)",
@@ -50,15 +50,15 @@ const estiloCampo = {
 const estiloBoton = {
   width: "100%",
   padding: "13px 16px",
-  border: "none",
+  border: "1px solid rgba(37, 99, 235, 0.28)",
   borderRadius: "10px",
-  background: "linear-gradient(135deg, #2563eb, #1d4ed8)",
-  color: "#ffffff",
+  background: "#152237",
+  color: "#ecf4fe",
   fontSize: "15px",
   fontWeight: "700",
   cursor: "pointer",
-  marginTop: "8px",
-  boxShadow: "0 8px 18px rgba(37, 99, 235, 0.28)",
+  margin: "20px 0 8px 0",
+  boxShadow: "0 2px 10px rgba(37, 99, 235, 0.28)",
 };
 
 const estiloFilaCampos = {
@@ -112,8 +112,9 @@ function Formulario_de_Cita({ onAgregarCita }) {
           display: "block",
           width: "100%",
           fontWeight: "700",
-          color: "#334155",
+          color: "#95a9ca",
           textAlign: "left",
+          background: "#0d1521",
         }}
       >
         Asunto
@@ -124,10 +125,14 @@ function Formulario_de_Cita({ onAgregarCita }) {
         id="Asuntos_"
         value={asunto}
         onChange={(e) => setAsunto(e.target.value)}
-        style={estiloCampo}
+        style={{ ...estiloCampo, backgroundColor: "#ecf4fe" }}
       >
         {asuntos.map((asunto, index) => (
-          <option key={index} value={asunto}>
+          <option
+            key={index}
+            value={asunto}
+            style={{ backgroundColor: "#0d1521", color: "#ecf4fe" }}
+          >
             {asunto}
           </option>
         ))}

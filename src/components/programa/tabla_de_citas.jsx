@@ -2,8 +2,8 @@ import React from 'react';
 
 function Tabla_de_Citas({ citas }) {
     return (
-        <div className="tabla-container" style={{ width: '70%', marginTop: '2rem', margin: '0 auto', border: '1px solid #e2e8f0', borderRadius: '12px', backgroundColor: '#ffffff', boxShadow: '0 4px 14px rgba(15, 23, 42, 0.08)' }}>
-            <table style={{ width: '100%', borderCollapse: 'collapse', color: '#334155', textAlign: 'center' }}>
+        <div className="tabla-container" style={{ width: '70%', marginTop: '2rem', margin: '0 auto', border: '1px solid #ffffff', borderRadius: '12px', overflow: 'hidden', backgroundColor: '#ffffff', boxShadow: '0 4px 14px rgba(15, 23, 42, 0.08)' }}>
+            <table style={{ width: '100%', borderCollapse: 'separate', borderSpacing: 0, color: '#334155', textAlign: 'center' }}>
                 <thead>
                     <tr>
                         <th style={{ padding: '14px 16px', backgroundColor: '#f1f5f9', color: '#1e293b', fontSize: '0.9rem', fontWeight: 600 }}>Asunto</th>

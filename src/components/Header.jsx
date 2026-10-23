@@ -6,7 +6,7 @@ function Header() {
         <header className="header">
             <h1
                 style={{
-                    color: '#1e3a5f',
+                    color: '#d6e2f3',
                     fontSize: 'clamp(2rem, 5vw, 3rem)',
                     fontFamily: 'sans-serif, sans-serif',
                     fontWeight: 700,
