@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import Formulario_de_Cita from '../views/formulario_de_citas';
-import Tabla_de_Citas from '../views/tabla_de_citas';
+import Formulario_de_Cita from '../views/vista_formulario';
+import Tabla_de_Citas from '../views/vista_tbl_citas';
 
 
 function Main() {
