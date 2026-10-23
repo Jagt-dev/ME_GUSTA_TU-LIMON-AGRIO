@@ -6,9 +6,9 @@ function Tabla_de_Citas({ citas }) {
             <table style={{ width: '100%', borderCollapse: 'separate', borderSpacing: 0, color: '#334155', textAlign: 'center' }}>
                 <thead>
                     <tr>
-                        <th style={{ padding: '14px 16px', backgroundColor: '#0d1521', color: '#95a9ca', fontSize: '0.9rem', fontWeight: 600, borderTopLeftRadius: '14px', overflow: 'hidden' }}>Asunto</th>
-                        <th style={{ padding: '14px 16px', backgroundColor: '#0d1521', color: '#95a9ca', fontSize: '0.9rem', fontWeight: 600 }}>Descripción</th>
-                        <th style={{ padding: '14px 16px', backgroundColor: '#0d1521', color: '#95a9ca', fontSize: '0.9rem', fontWeight: 600, borderTopRightRadius: '14px', overflow: 'hidden' }}>Fecha y Hora</th> 
+                        <th style={{ padding: '14px 16px', backgroundColor: '#f1f5f9', color: '#1e293b', fontSize: '0.9rem', fontWeight: 600 }}>Asunto</th>
+                        <th style={{ padding: '14px 16px', backgroundColor: '#f1f5f9', color: '#1e293b', fontSize: '0.9rem', fontWeight: 600 }}>Descripción</th>     
+                        <th style={{ padding: '14px 16px', backgroundColor: '#f1f5f9', color: '#1e293b', fontSize: '0.9rem', fontWeight: 600 }}>Fecha y Hora</th> 
                     </tr>
                 </thead>
                 <tbody>
@@ -22,10 +22,9 @@ function Tabla_de_Citas({ citas }) {
                     ) : (
                         citas.map((cita) => (
                             <tr key={cita.id}>
-                                <td style={{ padding: '14px 16px', borderTop: '1px solid #e2e8f0', backgroundColor: '#ecf4fe', color: '#0d1521' }}>{cita.asunto}</td>
-                                <td style={{ padding: '14px 16px', borderTop: '1px solid #e2e8f0', backgroundColor: '#ecf4fe', color: '#0d1521' }}>{cita.descripcion}</td>
-                                
-                                <td style={{ padding: '14px 16px', borderTop: '1px solid #e2e8f0', backgroundColor: '#ecf4fe', color: '#0d1521' }}>{cita.fecha}</td> 
+                                <td style={{ padding: '14px 16px', borderTop: '1px solid #e2e8f0' }}>{cita.asunto}</td>
+                                <td style={{ padding: '14px 16px', borderTop: '1px solid #e2e8f0' }}>{cita.descripcion}</td>
+                                <td style={{ padding: '14px 16px', borderTop: '1px solid #e2e8f0' }}>{cita.fecha}</td> 
                             </tr>
                         ))
                     )}
