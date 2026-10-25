@@ -24,7 +24,7 @@
 
 /*ESTILOS DEL COMPONENTE HEADER*/
 .header h1{
-    color: #d6e2f3;
+    color: #1d7dfe;
     font-size: clamp(2rem, 5vw, 3rem);
     font-family: sans-serif, sans-serif;
     font-weight: 700;
@@ -148,4 +148,210 @@
 .tabla-citas .td-false{
     padding: 14px 16px;
     border-top: 1px solid #e2e8f0;
+}
+
+/*ESTILOS DEL COMPONENTE LOGIN*/
+/* Página de acceso */
+.login-page,
+.login-page * {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.login-page * {
+  background: transparent;
+  color: inherit;
+}
+
+.login-page {
+  min-height: 100vh;
+  min-height: 100dvh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  color: #f4f7ff;
+  background:#152237
+}
+
+/* Tarjeta */
+.login-card {
+  width: 100%;
+  max-width: 420px;
+  padding: 36px 30px;
+  border-radius: 20px;
+  background: #0D1521;
+  border: 1px solid #2456a1;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.35);
+}
+
+/* Encabezado */
+.login-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.login-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 18px;
+  border-radius: 18px;
+  background: #1d7dfe;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.login-header h1 {
+  margin-bottom: 12px;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.login-header p {
+  color: #95a9ca;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* Formulario */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.login-field {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.login-field label {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.login-field input {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #405675;
+  border-radius: 10px;
+  background: #131e2e;
+  color: #f4f7ff;
+  font-size: 15px;
+  outline: none;
+}
+
+.login-field input:focus {
+  border-color: #278efd;
+  box-shadow: 0 0 0 3px rgba(39,142,253,.15);
+}
+
+.login-field input::placeholder {
+  color: #95a9ca;
+}
+
+/* Contraseña */
+.login-password {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.login-password input {
+  padding-right: 90px;
+}
+
+.login-toggle {
+  position: absolute;
+  right: 10px;
+  padding: 8px;
+  border: none;
+  color: #65a7ff;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+/* Mensaje de error */
+.login-error {
+  padding: 12px;
+  border-radius: 8px;
+  background: rgba(220, 38, 38, 0.15);
+  color: #ff9b9b;
+  text-align: center;
+  font-size: 13px;
+}
+
+/* Botón */
+.login-submit {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(
+    90deg,
+    #278efd,
+    #1554dc
+  );
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.login-submit:hover {
+  opacity: 0.9;
+}
+
+.login-footer {
+  margin-top: 25px;
+  text-align: center;
+  color: #95a9ca;
+  font-size: 12px;
+}
+
+/* Barra de sesión dentro de la aplicación */
+.sesion {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding: 15px 24px;
+  background: #11213a;
+  color: #f4f7ff;
+}
+
+.sesion span {
+  color: #f4f7ff;
+}
+
+.sesion button {
+  padding: 9px 15px;
+  border: 1px solid #2456a1;
+  border-radius: 8px;
+  background: #152237;
+  color: white;
+  cursor: pointer;
+  align-self: end;
+}
+
+.sesion button:hover {
+  background: #2456a1;
+}
+
+@media (max-width: 480px) {
+  .login-card {
+    padding: 28px 20px;
+  }
+
+  .login-header h1 {
+    font-size: 24px;
+  }
 }
