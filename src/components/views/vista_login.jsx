@@ -3,7 +3,7 @@ import { iniciarSesion } from "../../services/authServices";
  
 
 function Login({ onAcceder }) {
-  const [correo, setCorreo] = useState("");
+  const [correo, setCorreo] = useState("");//useState devuelve [valor, funcion].
   const [clave, setClave] = useState("");
   const [mostrarClave, setMostrarClave] = useState(false);
   const [error, setError] = useState("");
@@ -43,6 +43,7 @@ function Login({ onAcceder }) {
               placeholder="Ingresa tu correo"
               autoComplete="username"
               value={correo}
+              //
               onChange={(e) => {
                 setCorreo(e.target.value);
                 setError("");

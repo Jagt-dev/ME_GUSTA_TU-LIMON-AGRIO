@@ -8,7 +8,7 @@ import "./styles/styles.css";
 const CLAVE_SESION = "usuario_sesion";
 
 function App() {
-
+  
   const [usuario, setUsuario] = useState(() => {
     try {
       const usuarioGuardado = sessionStorage.getItem(CLAVE_SESION);
@@ -45,11 +45,11 @@ function App() {
 
   return (
     <div className="app-container">
-      <div className="sesion">
+    <div className="sesion">
         <p>Bienvenido, {usuario?.nombre}</p>
         <button onClick={cerrarSesion}>Cerrar Sesión</button>
       </div>
-
+      
       <Header />
       <Main />
       <Footer />

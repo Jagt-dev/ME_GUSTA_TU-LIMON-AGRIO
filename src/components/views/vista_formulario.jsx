@@ -1,21 +1,14 @@
 import { useState } from "react";
 // Archivo para el formulario.
 const asuntos = [
-  "Reballing",
-  "Armado de PC",
-  "Asesorias",
-  "Diagnosticos",
-  "Reparacion de Laptop",
-  "Mantenimiento Preventivo",
-  "Mantenimiento Correctivo",
-  "Instalacion de Software",
-  "Instalacion de Hardware",
-  "Actualizacion de Software",
-  "Actualizacion de Hardware",
-  "Configuracion de Red",
-  "Configuracion de Dispositivos",
-  "Recuperacion de Datos",
-  "Formateo de Dispositivos",
+  "Reballing",  "Armado de PC",
+  "Asesorias",  "Diagnosticos",
+  "Reparacion de Laptop",  "Mantenimiento Preventivo",
+  "Mantenimiento Correctivo",  "Instalacion de Software",
+  "Instalacion de Hardware",  "Actualizacion de Software",
+  "Actualizacion de Hardware",  "Configuracion de Red",
+  "Configuracion de Dispositivos",  "Recuperacion de Datos",
+  "Formateo de Dispositivos"
 ];
 
 function Formulario_de_Cita({ onAgregarCita }) {

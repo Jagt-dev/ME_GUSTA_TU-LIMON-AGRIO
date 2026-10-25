@@ -14,8 +14,8 @@ function Main() {
 
     return (
         <main className="main-content">
-            <Formulario_de_Cita onAgregarCita={agregarNuevaCita} /> 
-            <Tabla_de_Citas citas={citas} />
+            <Formulario_de_Cita onAgregarCita={agregarNuevaCita} />
+            {/*<Tabla_de_Citas citas={citas} />*/}
         </main>
     );
 }
